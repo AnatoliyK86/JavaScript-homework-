@@ -1,5 +1,8 @@
 
 let radius = prompt("Обчислимо площу круга радіуса R. Введіть число R: ", ' ');
+getMath = {
+
+}
 
 function getArea(radius) {
 	while (!(0 < radius || radius < 0)) {
