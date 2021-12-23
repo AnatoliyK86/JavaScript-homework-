@@ -5,11 +5,13 @@ getMath = {
 }
 
 function getArea(radius) {
-	while (!(0 < radius || radius < 0)) {
+	// while (!(0 < radius || radius < 0)) {
+		while ((typeof(radius) === 'number')) {
 		if (!isFinite(radius)) {
 			alert(`Повинно бути числове значення.`);
 		}
-		if (radius == 0 || radius === null || radius === ' '){
+		// if (radius == 0 || radius === null || radius === ' '){
+			if (!radius){
 			alert(`Будь ласка, введіть радіус!`);
 		}
 		radius = prompt("Введіть число R: ", ' ');
