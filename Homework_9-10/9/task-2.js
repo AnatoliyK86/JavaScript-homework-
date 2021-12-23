@@ -5,8 +5,9 @@ function getSqrt(number) {
 		if (!isFinite(number)) {
 			alert(`Повинно бути числове значення.`);
 		}
-		if (number == 0 || number === null || number === ' '){
-			alert(`Будь ласка, введіть число!`);
+		// if (number == 0 || number === null || number === ' '){
+			if (!number){
+			alert(`Будь ласка, введіть число!`);     
 		}
 		if (number < 0) {
 			alert(`Введіть додатнє число.`);
