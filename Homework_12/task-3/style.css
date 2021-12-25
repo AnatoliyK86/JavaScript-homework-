@@ -1,0 +1,17 @@
+
+.wrapper{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.square{
+	box-sizing: border-box;
+	padding: 5px;
+	width: 350px;
+	height: 350px;
+	border: 5px double black;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
