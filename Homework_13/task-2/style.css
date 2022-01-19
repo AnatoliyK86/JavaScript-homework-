@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+  display: block;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.form__head {
+  background-color: #0faa0f;
+  width: 100%;
+  padding: 12px 20px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.form__title {
+  font-size: 20px;
+}
+
+input[type=text], input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type=text]:hover, input[type=text] :focus, input[type=text] :active, input[type=email]:hover, input[type=email] :focus, input[type=email] :active, select:hover, select :focus, select :active {
+  -webkit-box-shadow: 0 0 0 2px lightblue;
+          box-shadow: 0 0 0 2px lightblue;
+  outline: none;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.signUp {
+  background-color: #0faa0f;
+  color: white;
+  padding: 12px 20px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 20px;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input[type=checkbox]:checked ~ button {
+  pointer-events: auto;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.userinfo {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.profile {
+  display: none;
+  background-color: #fefefe;
+  margin: 15% auto 15% auto;
+  border: 1px solid #888;
+  max-width: 40%;
+  border-radius: 10px;
+  border: 1px solid gray;
+  overflow: hidden;
+  text-align: center;
+}
+
+.profile__header {
+  min-height: 120px;
+  background-color: #0faa0f;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.profile__header::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 50%;
+  background-color: #eaf4eb;
+  border-radius: 50%;
+  border: 10px solid white;
+}
+
+.profile__header::before.new::after {
+  content: none;
+}
+
+.profile__header::before {
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile__header_avatar::before {
+  display: block;
+  background-image: url(man.jpg);
+}
+
+.profile__header_avatar.woman::before {
+  background-image: url(woman.jpg);
+}
+
+.profile__main_user {
+  font-weight: 700;
+}
+
+.profile__main_email {
+  margin-bottom: 25px;
+}
+
+.profile__footer {
+  min-height: 60px;
+  background-color: #0faa0f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.profile__footer__links {
+  margin-right: 10px;
+}
+
+.profile__footer__links_facebook {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(icons/fh.svg);
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile__footer__links_facebook:hover, .profile__footer__links_facebook:focus, .profile__footer__links_facebook:active {
+  background-image: url(icons/facebook.svg);
+}
+
+.profile__footer__links_github {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(icons/github.svg);
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile__footer__links_github:hover, .profile__footer__links_github:focus, .profile__footer__links_github:active {
+  background-image: url(icons/github_hover.svg);
+}
+
+.profile__footer__links_linkedin {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url(icons/linkedin.svg);
+  background-size: 35px 35px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile__footer__links_linkedin:hover, .profile__footer__links_linkedin:focus, .profile__footer__links_linkedin:active {
+  background-image: url(icons/linkedin_hover.svg);
+}
+
+.signOut {
+  margin: 30px 0 20px 0;
+  padding: 10px;
+  color: green;
+  font-size: 16px;
+}
+
+.signOut:hover {
+  color: white;
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,67 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	max-width: 1440px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 12px;
+	margin: 20px;
+}
+
+.wrapper{
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.general_fieldset{
+	border: none;
+	
+}
+
+.general_legend{
+	font-size: 25px;
+	border: 0 none;
+	margin-bottom: 8px;
+
+}
+
+.general_input{
+	border-radius: 3px;
+	width: 32%;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	/* box-sizing: border-box; */
+	padding: 5px;
+	border: 1px solid lightgrey;
+
+}
+
+.general_input:hover,
+.general_input:focus,
+.general_input:active,
+.trans_button:active
+{
+	/* border: 2px solid lightblue; */
+	box-shadow: 0 0 0 2px lightblue;
+	outline: none;
+	/* box-sizing: border-box; */
+}
+
+.trans_button{
+	width: 30%;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: lightgreen;
+	padding: 6px;
+	border-style: none;
+	border-color: lightgreen;
+	color: white;
+	border-radius: 3px;
+}
+
+.placeh{
+	width: 100%;
+}

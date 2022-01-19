@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<form class="form" action="#">
+		<div class="form__head">
+			<h2 class="form__title">Create your account</h2>
+		</div>
+		<div class="container">
+			<p>
+				<label>
+					<span>First Name</span><br>  
+					<input class="username" type="text" name="username" placeholder="type here..." required>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>Second Name</span><br>
+					<input class="surename" type="text" name="surename" placeholder="type here..." required>
+				</label>
+			</p>
+			<p>
+				<label>
+					<span>Email address</span><br>
+					<input class="email" type="email" name="email" placeholder="enter email..." required>
+				</label>
+			</p>
+			<p class="radio">
+				<input id="man"  type="radio" name="sex" value="man" checked>
+				<label for="man">
+					<span>man</span>    
+				</label>
+				<input id="woman" type="radio" name="sex" value="woman">
+				<label for="woman">
+					<span>woman</span> 
+				</label>
+			</p>
+			<p>
+				<label for="position">Position</label><br>
+				<select id="position" name="position" required>
+					<option value="">Choose...</option>
+				<option value="Frontend">Frontend</option>
+				<option value="Backend">Backend</option>
+				<option value="QC/QA">QC/QA</option>
+				</select>
+			</p>
+		
+			<p>
+				<input id="agree" type="checkbox" name="confirm" class="field">
+				<label for="agree">
+					<span>I agree all statements in Terms of service</span> 		
+				</label>
+				<button type="submit" class="signUp">Sign Up</button>
+			</p>
+		</div>
+	</form>
+	<div class="profile">
+		<div class="profile__header profile__header_avatar"></div>
+		<div class="profile__main">
+			<span class="profile__main_user userinfo">Name Surname</span>
+			<span class="profile__main_email userinfo">Email</span>
+			<span class="profile__main_position userinfo">Position</span>
+			<button type="text" class="signOut">Sign Out</button>
+		</div>
+		<ul class="profile__footer">
+			<li class="profile__footer__links"><a class="profile__footer__links_facebook" href="https://www.facebook.com" target="_blank"></a></li>
+			<li class="profile__footer__links"><a class="profile__footer__links_github" href="https://github.com/" target="_blank"></a></li>
+			<li class="profile__footer__links"><a class="profile__footer__links_linkedin" href="https://www.linkedin.com/" target="_blank"></a></li>
+		</ul>
+		<!-- <div class="profile__footer"></div> -->
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
