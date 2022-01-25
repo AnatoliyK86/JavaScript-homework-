@@ -6,7 +6,7 @@ document.querySelector('.list_items').addEventListener('click', e => {
 		case 'red':
 			e.target.style.color = 'red';
 			break;
-		
+
 		case 'yellow':
 			e.target.style.color = 'yellow';
 			break;
@@ -22,9 +22,22 @@ document.querySelector('.list_items').addEventListener('click', e => {
 		case 'orange':
 			e.target.style.color = 'orange';
 			break;
-		
+
 		case 'gray':
 			e.target.style.color = 'gray';
 			break;
 	}
 });
+
+
+// А вот как можно через полиморфизм и деструктуризацию:
+
+const alternativeEventListener = ({ target: coloringItem }) => {
+	const colors = ['red', 'yellow', 'green', 'blue', 'orange', 'gray'];
+
+	if (!colors.includes(coloringItem.id)) return;
+
+	coloringItem.style.color = coloringItem.id;
+};
+
+document.addEventListener('click', alternativeEventListener);
