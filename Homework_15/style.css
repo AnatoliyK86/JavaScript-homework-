@@ -1,0 +1,217 @@
+@font-face {
+	font-family: 'Digital-7'; 
+	src: url(/fonts/digital-7.ttf); 
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	max-width: 1440px;
+	margin: 20px;
+	margin-top: 150px;
+	font-family: 'Digital-7'; 
+	font-size: 14px;
+	color: #29677b;
+	background-color: #000000;
+}
+
+.wrapper{
+	width: 80vw;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-rows: repeat(3, fr);
+	background-color: #000000;
+
+}
+
+.block{
+	border: 1px solid white;
+	min-height: 120px;
+	width: 100%;
+	background-color: #010216;
+}
+
+
+/* --- CLOCK --- */
+
+.clock{
+	text-align: center;
+	padding: 25px;
+	/* align-self: center; */
+}
+.clock__carrentTime{
+	font-size: 56px;
+}
+
+
+/* --- STOPWATCH ---  */
+
+.stopwatch{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* padding: 10px; */
+}
+
+.stopwatch__scoreboard{
+	width: 200px;
+	height: 80%;
+	border: 1px solid white;
+	padding: 10px;
+	font-size: 13px;
+}
+
+.stopwatch__menu{
+	display: flex;
+	flex-direction: column;
+	/* align-content: space-between; */
+	justify-content: space-between;
+	height: 80%;
+	font-size: 38px;
+}
+
+.stopwatch__menu_time{
+	text-align: center;
+}
+
+.stopwatch__menu_buttons{
+	display: flex;
+	justify-content: center;
+}
+
+.stopwatch-buttons_item{
+	border: none;
+	/* outline: 1px solid white; */
+	box-shadow: 0 0 4px 0.4px white;
+	border-radius: 3px;
+	color: #29677b;
+	width: 40px;
+	font-family: 'Digital-7';
+	font-size: 10px;
+	text-transform: uppercase;
+	padding: 5px;
+	background-color: #040315;
+	margin-right: 4px;
+	cursor: pointer;
+}
+
+.stopwatch__scoreboard{
+	border-radius: 5px;
+	border: none;
+	background-color: #040315;
+	box-shadow: 0 0 5px 0.5px white;
+	text-align: center;
+	font-size: 16px;
+	overflow-x: scroll;
+	overflow: hidden;
+}
+
+.activeStopwatch{
+	box-shadow: 0 0 4px 0.4px rgb(121, 69, 189);
+}
+
+
+/* --- TIMER ---  */
+
+.timer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.timer__input{
+	display: flex;
+	flex-direction: column;
+	/* align-content: space-between; */
+	justify-content: space-between;
+	height: 80%;
+	font-size: 45px;
+	text-align: center;
+}
+
+.timer__input_text{
+	font-size: 18px;
+}
+
+.timer__input_buttons{
+	display: flex;
+	justify-content: center;
+}
+
+.timer__input_button{
+	border: none;
+	box-shadow: 0 0 4px 0.4px white;
+	border-radius: 3px;
+	color: #29677b;
+	width: 20px;
+	font-family: 'Digital-7';
+	font-size: 10px;
+	text-transform: uppercase;
+	padding: 5px;
+	background-color: #040315;
+	margin-right: 4px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+
+.timer-plus{
+	margin-right: 20px;
+}
+
+.timer__input_number{
+	all: unset;
+	/*   -moz-appearance: textfield; */
+	  /* width: 3em; */
+	  /* text-align: center; */
+}
+
+.timer__input_number::-webkit-inner-spin-button { 
+	display: none;
+}
+
+.timer__menu{
+	display: flex;
+	flex-direction: column;
+	/* align-content: space-between; */
+	justify-content: space-between;
+	height: 80%;
+}
+
+.timer__menu_time{
+	text-align: center;
+	font-size: 45px;
+}
+
+.timer__menu_buttons{
+	display: flex;
+	justify-content: center;
+}
+
+.timer-buttons_item {
+	border: none;
+	/* outline: 1px solid white; */
+	box-shadow: 0 0 4px 0.4px white;
+	border-radius: 3px;
+	color: #29677b;
+	width: 40px;
+	font-family: 'Digital-7';
+	font-size: 10px;
+	text-transform: uppercase;
+	padding: 5px;
+	background-color: #040315;
+	margin-right: 4px;
+	cursor: pointer;
+}
+
+.activeOutTimer{
+	box-shadow: 0 0 4px 0.4px rgb(121, 69, 189);
+}
+
+.activeInputTimer{
+	box-shadow: 0 0 4px 0.4px rgb(121, 69, 189);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="block clock">
+			<div class="clock__carrentData">Current data</div>
+			<div class="clock__carrentTime">Current time</div>
+		</div>
+		<div class="block stopwatch">
+			<div class="stopwatch__menu">
+				<time class="stopwatch__menu_time">00:00:00</time>
+				<nav class="stopwatch__menu_buttons stopwatch-buttons">
+					<button class="stopwatch-buttons_item stopwatch-start">start</button>
+					<button class="stopwatch-buttons_item stopwatch-loop">loop</button>
+					<button class="stopwatch-buttons_item stopwatch-stop">stop</button>
+					<button class="stopwatch-buttons_item stopwatch-reset">reset</button>
+				</nav>
+			</div>
+			<div class="stopwatch__scoreboard"></div>
+		</div>
+		<div class="block timer">
+			<div class="timer__input">
+				<input type="number" min="0" max="100" value="25" readonly class="timer__input_number">
+				<p class="timer__input_text">minutes</p>
+				<nav class="timer__input_buttons">
+					<button type="button" class="timer__input_button timer-plus">+</button>
+					<button type="button" class="timer__input_button timer-minus">-</button>
+				</nav>
+			</div>
+			<div class="timer__menu">
+				<p class="timer__menu_time">00:00</p>
+				<nav class="timer__menu_buttons">
+					<button class="timer-buttons_item timer-start">start</button>
+					<button class="timer-buttons_item timer-stop">stop</button>
+					<button class="timer-buttons_item timer-reset">reset</button>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="script.js"></script>
+</body>
+
+</html>
